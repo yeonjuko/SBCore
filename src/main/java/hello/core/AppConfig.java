@@ -14,7 +14,7 @@ public class AppConfig {
     public MemberService memberService(){
         return new MemberServiceImpl(memberRepository());
     }
-
+    // 역할, 구현 클래스 분리
     private MemberRepository memberRepository(){
         return new MemoryMemberRepository();
     }
